@@ -6,7 +6,7 @@ I started by implementing a monolithic substitution cipher, where each letter in
 
 Generating an Encryption Key: I created a substitution pattern to map plaintext letters to ciphertext letters.
 
-![Generating encryption key](exercises/Frequency_Analysis/gen_encrypt_key.png)
+![Generating encryption key](exercises/Frequency_Analysis/Images/gen_ecrypt_key.png)
 
 
 Preprocessing the Text: I simplified the source text by converting all uppercase letters to lowercase and removing punctuation and numbers. 
