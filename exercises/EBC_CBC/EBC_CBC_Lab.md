@@ -24,8 +24,13 @@ For ECB encryption:
 openssl enc -aes-256-ecb -in pokhara.bmp -out pokhara_ecb.bmp -k pokhara1
 
 When comparing both encrypted images, it was difficult to recognize the original picture in either. Both looked like static noise from an old television, with colors scrambled and heavily distorted. This demonstrated how CBC mode provides better diffusion than ECB mode, which tends to leak patterns.
+
+
+
 ![Original Image](https://media.discordapp.net/attachments/1174554222323318844/1398032607698092263/original_pokhara_bmp_image.png?ex=6883e2d3&is=68829153&hm=f2481e7bf5d755761279b5b346cb4f04bf6e424f1a8602267f5da4a2c4066420&=&format=webp&quality=lossless)
 
 ![EBC Encrypted Image](https://media.discordapp.net/attachments/1174554222323318844/1398032607433719961/EBC_pokhara_bmp_image.png?ex=6883e2d3&is=68829153&hm=d1c58d4625cb5ab950abc5774b49a8e388e769ac46ee6afc61da5fa623f15a7d&=&format=webp&quality=lossless)
+
+
 
 Through this task, I learned firsthand how ECB mode's block-by-block encryption can expose patterns in data like images, whereas CBC mode adds randomness that helps obscure such patterns.
