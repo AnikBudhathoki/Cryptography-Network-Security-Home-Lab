@@ -3,7 +3,6 @@
 #### ECB Encryption of BMP File
 
 I encrypted a BMP image file using AES-256 in ECB mode with the command:  
-```bash
 openssl enc -aes-256-ecb -in pic_original.bmp -out ecb_encrypted.bmp
 However, I initially forgot to include the password option -k, so I was prompted to manually enter the password bmp1.
 
