@@ -1,4 +1,4 @@
-# RSA Encryption and Signature Lab Report
+<img width="619" height="413" alt="image" src="https://github.com/user-attachments/assets/cd7229de-fa6e-4608-9102-900b110161d4" /># RSA Encryption and Signature Lab Report
 # Task 1: Deriving the Private Key
 For this task, I was provided with the following values:
 
@@ -12,7 +12,11 @@ e=
 text0D88C3
 
 I modified the provided bn_sample.c code to compute the private and public keys. In RSA, the public key is represented as (n,e) and the private key as (n,d), where d is the modular inverse of e modulo 
-phi(n). The computation of d was performed within the C program
+phi(n). The computation of d was performed within the C program:
+![Python Code1](https://media.discordapp.net/attachments/1174554222323318844/1398036476872233051/RSA_Code_1.png?ex=6883e66e&is=688294ee&hm=175c02e4094db80b8e906e8ebc66077aadde39c363374cbec9b6b76d182e3952&=&format=webp&quality=lossless)
+![Python Code2](https://media.discordapp.net/attachments/1174554222323318844/1398036476603666532/RSA_Code_2.png?ex=6883e66e&is=688294ee&hm=4c3a3c7f395182ade02524c3aac3fe7b69ad18200c4c719aa64aed63166993a1&=&format=webp&quality=lossless)
+![Python Code3](https://media.discordapp.net/attachments/1174554222323318844/1398036476322775201/RSA_Code_3.png?ex=6883e66e&is=688294ee&hm=a77915f9f5dbe7526ec7eecb7f8f731c80d70b17833663fb84280b01a9462ee6&=&format=webp&quality=lossless)
+
 
 # Task 2: Encrypting Messages
 Given our public key (e,n), the goal was to encrypt the message "A top secret!".
