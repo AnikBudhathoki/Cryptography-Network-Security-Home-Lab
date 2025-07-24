@@ -1,5 +1,5 @@
 # RSA Encryption and Signature Lab Report
-Task 1: Deriving the Private Key
+# Task 1: Deriving the Private Key
 For this task, I was provided with the following values:
 
 p=
@@ -14,7 +14,7 @@ text0D88C3
 I modified the provided bn_sample.c code to compute the private and public keys. In RSA, the public key is represented as (n,e) and the private key as (n,d), where d is the modular inverse of e modulo 
 phi(n). The computation of d was performed within the C program
 
-Task 2: Encrypting Messages
+# Task 2: Encrypting Messages
 Given our public key (e,n), the goal was to encrypt the message "A top secret!".
 
 ASCII String to Hex String Conversion
@@ -32,7 +32,7 @@ Original Hex String (after decryption): 4120746F702073656372657421
 
 The decrypted hexadecimal string successfully matched the initial hexadecimal string used for encryption, confirming the correctness of the encryption and decryption process.
 
-Task 3: Decrypting a Message
+# Task 3: Decrypting a Message
 Given that we have the same public and private keys from Task 2, I proceeded to decrypt the following ciphertext C:
 
 C=
@@ -49,16 +49,16 @@ python3 -c 'print(bytes.fromhex("50617373776F72642069732064656573").decode("utf-
 
 This conversion revealed the original message to be: "Password is dees".
 
-Task 4: Signing a Message
+# Task 4: Signing a Message
 For this task, using the same public and private keys, I was required to sign the message "I owe you $2000.". Additionally, I had to observe the effect of a slight message modification on the resulting signature by changing the message to "I owe you $3000.".
 
 Hex String Generation
 First, both ASCII strings were converted into their hexadecimal representations using Python 3:
 python3 -c 'print("I owe you $2000.".encode("utf-8").hex())'
-# Example result for "I owe you $2000.": 49206f776520796f752024323030302e
+Example result for "I owe you $2000.": 49206f776520796f752024323030302e
 
 python3 -c 'print("I owe you $3000.".encode("utf-8").hex())'
-# Example result for "I owe you $3000.": 49206f776520796f752024333030302e
+Example result for "I owe you $3000.": 49206f776520796f752024333030302e
 
 Encrypt Message using Public Key (Signing Process)
 Using the previously derived public key (e,n), I "encrypted" (signed) both messages. In RSA digital signatures, the sender signs a message by encrypting its hash with their private key. However, for this lab, it appears we were instructed to observe the effect of "encrypting" the message content directly using the public key as part of the signature generation demonstration.
@@ -71,7 +71,7 @@ Signature - Message 2 ("I owe you $3000."): D06908047527906C724937169FA68CE0AC44
 
 Even with only a slight change to the original message, a dramatic difference in the generated signatures was observed. This effectively demonstrated the sensitivity and strength of cryptographic signatures, where even minor alterations lead to entirely different outputs.
 
-Summary of RSA Encryption Lab
+# Summary of RSA Encryption Lab
 Through this lab, I gained a practical understanding of the RSA public-key cryptosystem. I learned that RSA relies on the generation of two large prime numbers (p and q) to construct a public key (n,e) and a private key (n,d). The process involves several key steps:
 
 Calculating n: The product of the two large primes, n=p
