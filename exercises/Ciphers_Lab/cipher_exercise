@@ -1,1 +1,32 @@
+### Task 2: Different Ciphers and Modes
+
+In this task, I worked with several symmetric encryption algorithms and modes using OpenSSL to encrypt and decrypt a sample text file (`article.txt`).
+
+- **AES-256-CBC**  
+  I encrypted the original `article.txt` file using the command:  
+  ```bash
+  openssl enc -aes-256-cbc -in article.txt -out encrypted_aes.bin -k password1 -iv 00112233445566778899aabbccddeeff
+
+This produced an encrypted binary file. I then decrypted it using:
+openssl enc -aes-256-cbc -d -in encrypted_aes.bin -out decrypted_aes.txt -k password1 -iv 00112233445566778899aabbccddeeff
+
+Finally, I compared the decrypted file with the original to verify the process.
+
+DES-EDE3-CBC (Triple DES)
+I encrypted with:
+openssl enc -des-ede3-cbc -e -in article.txt -out encrypted_des-ede3-cbc.bin -k password2 -iv 00112233445566778899aabbccddeeff
+
+And decrypted with:
+openssl enc -des-ede3-cbc -d -in encrypted_des-ede3-cbc.bin -out decrypted_des.txt -k password2 -iv 00112233445566778899aabbccddeeff
+
+Then, I verified that the decrypted output matched the original plaintext.
+AES-128-CBC
+Encryption command: openssl enc -aes-128-cbc -e -in article.txt -out encrypted_aes128.bin -k password3 -iv 00112233445566778899aabbccddeeff
+
+Decryption command: openssl enc -aes-128-cbc -d -in encrypted_aes128.bin -out decrypted_aes128.txt -k password3 -iv 00112233445566778899aabbccddeeff
+
+I validated the decrypted file against the original to ensure correctness.
+
+Through this exercise, I gained practical experience 
+applying different symmetric encryption algorithms and cipher modes with OpenSSL and understanding their workflows.
 
