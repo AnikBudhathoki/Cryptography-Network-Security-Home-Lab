@@ -1,6 +1,6 @@
 # Cryptography-Network-Security-Home-Lab
 
-This repository contains my implementations of various cryptography labs from the SEED Labs project, demonstrating hands-on experience with:
+This repository contains my implementations of various cryptography/network labs that I wanted to complete to demonstrate and practice hands-on experience with:
 
 - Secret key encryption (AES, DES, ECB/CBC modes)  
 - Public key cryptography (RSA)  
@@ -8,7 +8,7 @@ This repository contains my implementations of various cryptography labs from th
 - Hash collisions (MD5)  
 
 ---
-
+Below are the follwing sub-labs and activites I completed. Each Exercise consist of a description of what I did and what I learned. Specifics of the steps I completed can be found in exercises folder. 
 ## 1) Frequency Analysis
 
 ### 📜 Description  
