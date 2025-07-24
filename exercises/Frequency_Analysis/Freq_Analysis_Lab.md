@@ -22,4 +22,5 @@ Frequency Analysis and Decryption: I wrote and used a Python script (freq.py) to
 By comparing this distribution with known English language statistics, I gradually deciphered the ciphertext. 
 This iterative substitution approach allowed me to crack the cipher step-by-step, demonstrating the power of frequency analysis against substitution ciphers.
 
+![Frequency Analysis Result](https://media.discordapp.net/attachments/1174554222323318844/1398026631246909620/freq_result.png?ex=6883dd42&is=68828bc2&hm=dcbff8f5959de50efabc38a88189c75c6f67ddbc13b769008f63bf3d7c9ba392&=&format=webp&quality=lossless)
 
