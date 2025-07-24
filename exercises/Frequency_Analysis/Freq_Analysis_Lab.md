@@ -6,7 +6,9 @@ I started by implementing a monolithic substitution cipher, where each letter in
 
 Generating an Encryption Key: I created a substitution pattern to map plaintext letters to ciphertext letters.
 
-![Alt text](main/exercises/Frequency_Analysis/Images/gen_ecrypt_key.png)
+![Encryption Key Generation](exercises/Frequency_Analysis/Images/gen_ecrypt_key.png)
+
+
 
 
 
