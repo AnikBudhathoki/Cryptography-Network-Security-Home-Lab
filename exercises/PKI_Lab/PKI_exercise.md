@@ -26,6 +26,7 @@ What indicates this is a CA’s certificate?
 The X509v3 constraints extension shows "CA: TRUE". This indicates the certificate is a valid CA certificate, establishing trust in digital communications.
 
 ![X509 Extension](https://media.discordapp.net/attachments/1174554222323318844/1398040453839851602/PKI_3.png?ex=6883ea22&is=688298a2&hm=4a2072158fea5d341a93bf124e1cfd4c55fe56e5edb390ed54f350b873f3e86c&=&format=webp&quality=lossless)
+
 How do you know this is a self-signed certificate?
 Because the issuer and the subject of the certificate are the same, it indicates the certificate is self-signed.
 
@@ -36,9 +37,15 @@ The private exponent
 𝑑
 d is accessible after entering the passphrase; the key length is 2048 bits.
 
+![Private Exponent](https://media.discordapp.net/attachments/1174554222323318844/1398040453630263316/private_exponent.png?ex=6883ea22&is=688298a2&hm=667fcbb3488988c2d181cc808e9e3c35aa9af09f8d0262e99f6536afa0b4c0cc&=&format=webp&quality=lossless)
+
 The modulus appears in both the public and private key sections.
 
+![Modulus](https://media.discordapp.net/attachments/1174554222323318844/1398040453374414980/modulus.png?ex=6883ea22&is=688298a2&hm=071c4ab183923d0979f8e956e1fd0587afb0fc4bc60bf0fbf76cd9fce4a6ff72&=&format=webp&quality=lossless)
+
 The two primes used to generate the RSA key are listed under private key details after entering the passphrase.
+
+![Primes](https://media.discordapp.net/attachments/1174554222323318844/1398040453131272305/primes.png?ex=6883ea22&is=688298a2&hm=797ec6df1edde1845659edd8ee686752080667309fcf2f3321342a1dbcbdd92c&=&format=webp&quality=lossless)
 
 # Task 2: Certificate Request (CSR)
 We simulated a company requesting a public key certificate from our CA.
@@ -53,6 +60,8 @@ To view the decoded contents of the CSR:
 openssl req -in server.csr -text -noout
 To view the private key details, including primes and private exponents:
 openssl rsa -in server.key -text -noout
+
+![Certificate Request](https://media.discordapp.net/attachments/1174554222323318844/1398040452808315022/certificate_request.png?ex=6883ea22&is=688298a2&hm=90b0a32b6ba183f7891bb8060ac7ceed0db920272b9154f02d45efee5ed70d76&=&format=webp&quality=lossless)
 
 # Task 3: Certificate Generation
 We simulated signing the CSR files using the CA.
@@ -76,6 +85,9 @@ XfinityTwo.com
 XfinityTwoA.com
 
 XfinityTwoB.com
+
+![Certificate Generation](https://media.discordapp.net/attachments/1174554222323318844/1398040452342612099/certificate.png?ex=6883ea22&is=688298a2&hm=e71b9b6156de5792a4311f323a886116276ecab274ec1a5dbbc2158562296338&=&format=webp&quality=lossless)
+
 
 # Summary of PKI Lab
 Public Key Infrastructure (PKI) is used to verify ownership of public keys for secure communications.
