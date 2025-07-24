@@ -6,7 +6,7 @@ I started by implementing a monolithic substitution cipher, where each letter in
 
 Generating an Encryption Key: I created a substitution pattern to map plaintext letters to ciphertext letters.
 
-![Encryption Key Generation](<img width="620" height="242" alt="image" src="https://github.com/user-attachments/assets/9454d3a7-99cc-4ae3-8d7d-6c8ca40b449c" />
+![Encryption Key Generation](<img width="620" height="242" alt="image" src="https://github.com/user-attachments/assets/9454d3a7-99cc-4ae3-8d7d-6c8ca40b449c" />)
 )
 
 
