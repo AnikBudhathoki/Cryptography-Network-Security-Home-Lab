@@ -10,6 +10,7 @@ Generating an Encryption Key: I created a substitution pattern to map plaintext 
 
 
 
+
 Preprocessing the Text: I simplified the source text by converting all uppercase letters to lowercase and removing punctuation and numbers. 
 This involved using Unix tr commands to clean and prepare the text data for encryption.
 
