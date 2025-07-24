@@ -1,4 +1,4 @@
-<img width="619" height="413" alt="image" src="https://github.com/user-attachments/assets/cd7229de-fa6e-4608-9102-900b110161d4" /># RSA Encryption and Signature Lab Report
+# RSA Encryption and Signature Lab Report
 # Task 1: Deriving the Private Key
 For this task, I was provided with the following values:
 
