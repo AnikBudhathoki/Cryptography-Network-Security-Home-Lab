@@ -69,24 +69,7 @@ This lab gave me hands-on experience with RSA, including key generation, message
 It was satisfying to see how encryption hides plaintext and decryption reveals it again. This lab made RSA much more approachable and deepened my interest in cryptography.
 
 ---
-
-## 5) Signing a Message
-
-In this task, I used RSA keys from the previous lab to digitally sign a message and observe how small changes affect the signature.
-
-### What I Learned  
-- RSA key generation starts by selecting two large primes `p` and `q`.  
-- The modulus `n` is computed by multiplying these primes: `n = p × q`.  
-- Euler’s totient function, φ(n), is calculated as `(p-1)(q-1)`.  
-- The public exponent `e` is chosen, and the private exponent `d` is calculated as the modular inverse of `e` modulo φ(n).  
-- Encryption uses the formula: `c = m^e mod n`  
-- Decryption uses the formula: `m = c^d mod n`  
-- Small changes in messages result in entirely different signatures, emphasizing RSA’s cryptographic strength.  
-- The Big Number (BN) API simplifies handling large integer operations.
-
----
-
-## 6) PKI Lab: Certificate Authority and Certificate Management
+## 5) PKI Lab: Certificate Authority and Certificate Management
 
 In this lab, I explored Public Key Infrastructure (PKI) by acting as a Certificate Authority (CA), generating Certificate Signing Requests (CSRs), and issuing certificates.
 
@@ -96,21 +79,6 @@ In this lab, I explored Public Key Infrastructure (PKI) by acting as a Certifica
 - Learned to create a self-signed CA certificate, generate CSRs, and sign requests to issue trusted certificates.  
 - Explored certificate structure, viewing key details like primes, exponents, and modulus.  
 - Reinforced the importance of extensions such as X509v3 constraints and subject alternative names in establishing trust.
-
----
-
-## 7) MD5 Collision Attack Lab
-
-In this lab, I explored the vulnerability of the MD5 hash function by generating two distinct files producing the same MD5 hash — a classic collision attack.
-
-### What I Learned  
-- A secure hash function requires one-wayness and collision resistance.  
-- Using `md5collgen` with a prefix, it’s possible to create two different files with identical MD5 hashes, exposing MD5’s vulnerability.  
-- Padding is automatically added when the prefix length isn’t a multiple of 64 bytes.  
-- MD5’s design flaw allows different inputs to yield the same hash — a critical security issue.  
-- This experience improved my understanding of secure hash algorithms and why MD5 is deprecated in security contexts.
-
----
 
 ## References
 
