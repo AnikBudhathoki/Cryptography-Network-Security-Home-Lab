@@ -1,3 +1,5 @@
+
+
 # PKI Lab
 
 ---
@@ -14,11 +16,16 @@ After the CA was created, I used the following commands to output its details an
 openssl x509 -in ca.crt -text -noout
 openssl rsa -in ca.key -text -noout
 
+![Openssl](https://media.discordapp.net/attachments/1174554222323318844/1398040454691553351/PKI_1.png?ex=6883ea22&is=688298a2&hm=6afc0f32dff1159f5ce6203cca847009b1199ac971ce39fd012b90f66ec84387&=&format=webp&quality=lossless)
+
+![PEM Passphrase](https://media.discordapp.net/attachments/1174554222323318844/1398040454100160603/PKI_2.png?ex=6883ea22&is=688298a2&hm=8d4887c524110d71696e2ae42a15c3c418e99efffb94b85e1e84befb4674fff2&=&format=webp&quality=lossless)
+
 Passphrase used: dees
 
 What indicates this is a CA’s certificate?
 The X509v3 constraints extension shows "CA: TRUE". This indicates the certificate is a valid CA certificate, establishing trust in digital communications.
 
+![X509 Extension](https://media.discordapp.net/attachments/1174554222323318844/1398040453839851602/PKI_3.png?ex=6883ea22&is=688298a2&hm=4a2072158fea5d341a93bf124e1cfd4c55fe56e5edb390ed54f350b873f3e86c&=&format=webp&quality=lossless)
 How do you know this is a self-signed certificate?
 Because the issuer and the subject of the certificate are the same, it indicates the certificate is self-signed.
 
