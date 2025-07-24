@@ -56,6 +56,8 @@ python3 -c 'print(bytes.fromhex("50617373776F72642069732064656573").decode("utf-
 
 This conversion revealed the original message to be: "Password is dees".
 
+![RSA Result](https://media.discordapp.net/attachments/1174554222323318844/1398036475832172595/RSA_result.png?ex=6883e66e&is=688294ee&hm=389809e6c987281f58dafe4e390d6bc073cd85295391d0a521eaa99d5ace8f32&=&format=webp&quality=lossless)
+
 # Task 4: Signing a Message
 For this task, using the same public and private keys, I was required to sign the message "I owe you $2000.". Additionally, I had to observe the effect of a slight message modification on the resulting signature by changing the message to "I owe you $3000.".
 
