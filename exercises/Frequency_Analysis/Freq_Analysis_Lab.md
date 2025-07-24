@@ -16,7 +16,7 @@ This involved using Unix tr commands to clean and prepare the text data for encr
 
 Encrypting the Plaintext: I applied the substitution cipher using tr to convert the cleaned plaintext into ciphertext based on my encryption key.
 
-![Encrypting](https://media.discordapp.com/attachments/1174554222323318844/1398025953799704638/encrypting_text.png?ex=6883dca1&is=68828b21&hm=a8dce90d2480c9e13399fba11ed5a1ad0431bf25e45d29f82e0392378080446b&)
+![Encrypting]([https://media.discordapp.com/attachments/1174554222323318844/1398025953799704638/encrypting_text.png?ex=6883dca1&is=68828b21&hm=a8dce90d2480c9e13399fba11ed5a1ad0431bf25e45d29f82e0392378080446b&](https://media.discordapp.net/attachments/1174554222323318844/1398025953799704638/encrypting_text.png?ex=6883dca1&is=68828b21&hm=a8dce90d2480c9e13399fba11ed5a1ad0431bf25e45d29f82e0392378080446b&=&format=webp&quality=lossless))
 
 Frequency Analysis and Decryption: I wrote and used a Python script (freq.py) to analyze the frequency distribution of letters and n-grams in the ciphertext. 
 By comparing this distribution with known English language statistics, I gradually deciphered the ciphertext. 
